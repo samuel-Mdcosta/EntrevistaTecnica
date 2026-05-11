@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- biblioteca PDF.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <script>
+      // PDF.js cria internamente um blob blob:origin/... que faz importScripts do CDN
+      // isso contorna a restricao de worker cross-origin
+      pdfjsLib.GlobalWorkerOptions.workerSrc =
+        "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";
+    </script>
+    <title>Entrevista</title>
+  </head>
+  <body>
+    <input type="file" id="arquivo" />
+    <br />
+    <button id="btn" onclick="validarUpdate()">Enviar</button>
+
+    <div id="status" style="margin-top: 15px"></div>
+    <div id="viewer"></div>
+
+    <script src="indexP2.js"></script>
+  </body>
+</html>
