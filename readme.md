@@ -60,7 +60,7 @@ Abra o arquivo [frontend/index.html](frontend/index.html) diretamente no navegad
 
 Abra o arquivo [parte2-bonus/frontend/index.html](frontend/index.html) diretamente no navegador, pois live server bloqueia a renderizacao por pagina
 
-Entregue no Domingo, dia 11/05.
+Entregue no Domingo, dia 10/05.
 
 ### Decisões de implementação
 
